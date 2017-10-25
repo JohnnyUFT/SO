@@ -4,9 +4,9 @@ class processo:
     def __init__(self):
         # Recursos Alocados:
         self.nome = nome
-        self.pid = pid
+        self.pid = pid # identificados do processo
         self.prioridade = prioridade
-        self.tempo_procesador = tempo_procesador
+        self.tempo_cpu = tempo_cpu
 
         # Enderecos de memoria:
         self.status = status # inteiro
@@ -20,7 +20,7 @@ class processo:
     def getPrioridade(self):
         retun self.prioridade
     def getTempo(self):
-        return self.tempo_procesador
+        return self.tempo_cpu
     def getStatus(self):
         return self.status
     def getEspacoMemoria(self):
