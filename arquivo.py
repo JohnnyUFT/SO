@@ -11,14 +11,9 @@ import pandas as pd
 
 def leArquivo():
     # lê o arquivo:
-    fin = open('arquivo', 'rt' )
-    while True:
-        linha = fin.readline()
-        if not linha:
-            break
-        trataLinhas(linha)
-    fin.close()
+    df = pd.read_csv("dados.csv")
+    #print(df1.head())
 
-# Define o que acontece com cada linha lida do arquivo;
-def trataLinhas(linha):
-    pass
+    mat = np.array(df, dtype=str)
+
+    return mat

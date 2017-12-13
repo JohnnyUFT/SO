@@ -1,0 +1,8 @@
+# ignore all logs
+*.log
+*.pyc
+*.idea
+.idea
+*.vscode
+.vscode
+

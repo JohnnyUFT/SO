@@ -1,0 +1,12 @@
+PID,Nome,Memoria,Tempo_CPU,Prioridade
+8847,aaaaa,800,5,0
+9900,bbbbb,700,7,1
+4456,ccccc,600,8,2
+5516,ddddd,700,3,3
+1190,eeeee,670,7,0
+1212,fffff,770,7,0
+1000,ggggg,700,6,1
+3412,hhhhh,650,9,1
+2334,iiiii,700,8,2
+2367,jjjjj,600,8,2
+2478,kkkkk,780,8,3
