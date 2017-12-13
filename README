@@ -1,4 +1,13 @@
-Quem é o tal do PCB, exatamente?
+Sistemas Operacionais - UFT
+Aluno: Johnny Pereira
+Profº: Thiago Magalhães
+
+Implementação de um Escalonador de Processos:
+Descrição dos arquivos:
+1 - arquivo.py - contém apenas o método que lê o arquivo .csv do disco;
+2 - dados.csv - contém atributos dos processos em formato de tabela;
+3 - escalonador.py - contém o 'programa' em si, classe principal e métodos principais necessários a que se faça a abstração do Escalonador de Processos;
+4 - processo.py - definição da classe processo, com seus atributos e métodos;
 
 Como se dará a dinâmica da execução?
 1 - Selecionar ao acaso algum processo para fazer IO (feito).
