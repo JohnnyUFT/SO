@@ -1,4 +1,4 @@
-PID,Nome,Memoria,Tempo_CPU,Prioridade
+PID,Nome,Memoria,Quantum,Prioridade
 8847,aaaaa,800,5,0
 9900,bbbbb,700,7,1
 4456,ccccc,600,8,2

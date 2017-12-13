@@ -4,15 +4,14 @@ class processo:
     """
     Classe processo com seus atributos e métodos característicos:
     """
-    def __init__(self, pid, nome, espaco_memoria, tempo_cpu, prioridade):
+    def __init__(self, pid, nome, espaco_memoria, quantum, prioridade):
         # Recursos Alocados:
         self.nome = nome
-        self.pid = pid # identificados do processo
-        self.prioridade = prioridade
-        self.tempo_cpu = tempo_cpu
-        # Enderecos de memoria:
-        self.status = 0
-        self.espaco_memoria = espaco_memoria
+        self.pid = pid # identificador do processo
+        self.prioridade = prioridade # identifica a fila de prioridade em que está
+        self.quantum = quantum # quantos tempo de CPU precisa
+        self.status = 0 # se pronto, bloqueado, executando
+        self.espaco_memoria = espaco_memoria # quanto gasta da memória principal
 
     # getters:
     def getNome(self):
@@ -22,7 +21,7 @@ class processo:
     def getPrioridade(self):
         return int(self.prioridade)
     def getTempo(self):
-        return int(self.tempo_cpu)
+        return int(self.quantum)
     def getStatus(self):
         return int(self.status)
     def getEspacoMemoria(self):
@@ -37,13 +36,16 @@ class processo:
         self.pid = pid
     def setPrioridade(self, prioridade):
         self.prioridade = prioridade
-    def setTempo(self):
-        pass # nao muda
+
+    # diz quanto de tempo ainda precisa para rodar na CPU:
+    def setTempo(self, quantumRestante):
+        self.quantum = quantumRestante
+    
     def setStatus(self, status):
         self.status = status
     def setEspacoMemoria(self):
-        pass # nao sei se muda
+        pass # nao muda
 
     # metodos adicionais:
     def facaAlgo(self):
-        pass
+        pass # desnecessários
