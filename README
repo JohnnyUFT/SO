@@ -1,15 +1,12 @@
 Quem é o tal do PCB, exatamente?
 
 Como se dará a dinâmica da execução?
-1 - Selecionar ao acaso algum processo para fazer IO.
-2 - Permitir que um usuário entre com processos além dos já configurados em arquivo.
-3 - Qual o nível de interação que o usuário terá?
+1 - Selecionar ao acaso algum processo para fazer IO (feito).
+2 - Permitir que um usuário entre com processos além dos já configurados em arquivo (ainda não).
+3 - Qual o nível de interação que o usuário terá? (pouco, quase nada)
 
-Como lidar com as 4 listas de prioridades? O que as define?
+Prioridades já definidas no arquivo .csv;
 
-Faltou adicionar o atributo quantum á classe processo.
-:) O professor disse em sala que não precisamos nos preocupar com quantum.
+Quantum definido no arquivo .csv junto com os demais atributos;
 
-Tempo de CPU também;
-
-Necessário definir um tamanho total de memória e tamanho demandado pelo processo que está na fila;
+Tamanho total de memória definido "in hard code" i.e, no meio do código, através da variável 'ram';
